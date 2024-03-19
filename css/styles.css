@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #47682C;
+}
+
+body {
+    background: linear-gradient(rgba(25, 50, 60, .75), rgba(65, 101, 138, .75), rgba(149, 178, 176, .75)),
+                url(../images/stars.jpg);
+    background-size: 200%;
+    overflow: hidden;
+    animation: backgroundFlow 400s ease infinite;
+    color: white;
+    font-family: 'Unica One', sans-serif;
+}
+
+@keyframes backgroundFlow {
+	0% {
+		background-position: left;
+	}
+    25% {
+		background-position: center;
+	}
+	50% {
+		background-position: right;
+	}
+    75% {
+        background-position: center;
+    }
+    100% {
+        background-position: left;
+    }
+    75% {
+        background-position: center;
+    }
+    50% {
+		background-position: right;
+	}
+    25% {
+		background-position: center;
+	}
+    0% {
+		background-position: left;
+	}
+}
+
+main,
+.home,
+.home-wrapper,
+.menu,
+.menu-wrapper,
+.about,
+.contact,
+.contact-wrapper,
+.projects,
+.projects-wrapper {
+    height: 100vh;
+    width: auto;
+}
+
+.home,
+.menu,
+.about,
+.contact,
+.projects {
+    margin: 0 24px;
+}
+
+/* ============================================================================================================
+                                                
+                                            HEADER STYLING
+
+===============================================================================================================*/
+
+header {
+    position: fixed;
+    z-index: 5;
+    top: 5vh;
+    width: 100%;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+.left-header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.right-header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right-header-content ul {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: none;
+}
+
+.menu-button {
+    background: transparent;
+    border: none;
+    fill: white;
+    z-index: 7;
+}
+
+.menu-button:hover {
+    cursor: pointer;
+}
+
+.menu-button .bar {
+    transition:
+        y 300ms ease-in 300ms,
+        rotate 300ms ease-in,
+        opacity 0ms 300ms;
+    transform-origin: center;
+}
+
+.menu-button[aria-expanded="true"] .bar {
+    transition:
+        y 300ms ease-in,
+        rotate 300ms ease-in 300ms,
+        opacity 0ms 300ms;
+}
+
+.menu-button[aria-expanded="true"] .top,
+.menu-button[aria-expanded="true"] .bottom {
+    y: 45;
+}
+
+.menu-button[aria-expanded="true"] .top {
+    rotate: 45deg;
+}
+
+.menu-button[aria-expanded="true"] .middle {
+    opacity: 0;
+}
+
+.menu-button[aria-expanded="true"] .bottom {
+    rotate: -45deg;
+}
+
+/* ============================================================================================================
+                                                
+                                            HOME PAGE STYLING
+
+===============================================================================================================*/
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.intro-text h1 {
+    font-size: 1.5rem;
+}
+
+.name {
+    font-size: 2rem;
+}
+
+.intro-role-wrapper {
+    font-size: 1rem;
+    border-bottom: 0.5px dashed white;
+    border-top: 0.5px dashed white;
+    padding: 5px 0px;
+    margin: 10px 0 25px;
+}
+
+.intro-link-wrapper,
+.about-link-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-links-container a,
+.about-links-container a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-left: 5px;
+}
+
+.intro-link-wrapper:first-of-type,
+.about-link-wrapper:first-of-type {
+    margin-bottom: 15px;
+}
+
+.arrow {
+    width: 35px;
+}
+
+/* ============================================================================================================
+                                                
+                                            ABOUT PAGE STYLING
+
+===============================================================================================================*/
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about-photo {
+    height: 100px;
+    margin-top: 20px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.about-text p {
+    margin: 20px 0;
+}
+
+.about-photo-container {
+    float: right;
+    margin: 30px 10px 20px;
+}
+
+
