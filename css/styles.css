@@ -5,11 +5,13 @@
 }
 
 :root {
-    --green: #47682C;
+    --asparagus: #7FB069;
+    --dark-green: #47682C;
+    --dark-slate-grey: #19323c;
+
 }
 
 body {
-    background: linear-gradient(rgba(25, 50, 60, .75), rgba(65, 101, 138, .75), rgba(149, 178, 176, .75)),
                 url(../images/stars.jpg);
     background-size: 200%;
     overflow: hidden;
@@ -287,4 +289,110 @@ header {
     align-items: center;
     width: 100%;
 }
+
+/* ============================================================================================================
+                                                
+                                            CONTACT PAGE STYLING
+
+===============================================================================================================*/
+
+.contact,
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form,
+.contact-links-wrapper {
+    margin-top: 20px;
+}
+
+.contact ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact svg {
+    height: 25px;
+    width: 45px;
+}
+
+.contact svg:hover,
+.contact svg:focus {
+    transform: rotate(30deg) scale(1.2);
+}
+
+.github, 
+.linkedIn,
+.treehouse {
+    fill: white;
+    stroke: white;
+}
+
+.mail {
+    stroke: white;
+}
+
+form {
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 15px 10px;
+    max-width: 300px;
+    background-color: var(--dark-slate-grey);
+}
+
+form h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+form h2,
+form p,
+#send-button {
+    text-align: center;
+}
+
+input,
+textarea {
+    margin-top: 5px;
+    width: 100%;
+    border: 1px solid black;
+    font-size: 1rem;
+    padding: 5px 10px;
+    font-family: 'Fira Sans Condensed';
+    letter-spacing: .5px;
+    border-radius: 5px;
+    color: var(--dark-slate-grey);
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+textarea {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.form-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#send-button {
+    width: 60%;
+    background-color: var(--dark-green);
+    color: white;
+    padding: 3px 0;
+    font-size: 1.1rem;
+    font-family: 'Fira Sans Condensed';
+    border-radius: 10px;
+    border-color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 
