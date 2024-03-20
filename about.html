@@ -19,7 +19,7 @@
                 <ul>
                     <p>X</p>
                     <p>X</p>
-                    <button class="menu-button" aria-controls="primary-navigation" aria-expanded="false">
+                    <button id="about-nav-button" class="nav-button" aria-controls="primary-navigation" aria-expanded="false">
                         <svg fill="white" class="hamburger" viewBox="0 0 100 100" width="40">
                             <rect class="top bar" width="80" height="10" x="10" y="25" rx="5"></rect>
                             <rect class="middle bar" width="80" height="10" x="10" y="45" rx="5"></rect>
@@ -31,8 +31,8 @@
         </div>
     </header>
     <main>
-        <div class="menu">
-            <div class="menu-wrapper">
+        <div class="nav">
+            <div class="nav-wrapper">
                 <ul>
                     <li>
                         <a href="index.html" class="nav-link">Home</a>
@@ -49,29 +49,33 @@
                 </ul>
             </div>
         </div>
-        <div class="about">
-            <h1>About Me</h1>
-            <div class="about-wrapper">
-                <div class="about-photo-container">
-                    <img id="about-photo" src="images/me.jpeg" alt="Victoria wearing hat, sunglasses, and camera">
-                </div>
-                <div class="about-text">
-                    <p>I'm an aspiring web developer in search of an entry-level position in front-end web development. My strengths include a good eye for design, exceptional grammar/writing skills, time-management proficiency, and great teamwork capabilities.</p>
-                <!-- <div class="about-links-photo-container"> -->
-                    <div class="about-links-container">
-                        <div class="about-link-wrapper">
-                            <a class="about-links" href="education.html">Education</a>
-                            <img class="arrow" src="images/arrow.png"></img>
+        <div class="page-content">
+            <div class="about">
+                <div class="about-wrapper">
+                    <div class="about-content-wrapper">
+                        <h1>About Me</h1>
+                        <div class="about-photo-container">
+                            <img id="about-photo" src="images/me.jpeg" alt="Victoria wearing hat, sunglasses, and camera">
                         </div>
-                        <div class="about-link-wrapper">
-                            <a class="about-links" href="skills">Skills</a>
-                            <img class="arrow" src="images/arrow.png"></img>
+                        <div class="about-text">
+                            <p>I'm an aspiring web developer in search of an entry-level position in front-end web development. My strengths include a good eye for design, exceptional grammar/writing skills, time-management proficiency, and great teamwork capabilities.</p>
+                        <!-- <div class="about-links-photo-container"> -->
+                            <div class="about-links-container">
+                                <div class="about-link-wrapper">
+                                    <a class="about-links" href="education.html">Education</a>
+                                    <img class="arrow" src="images/arrow.png"></img>
+                                </div>
+                                <div class="about-link-wrapper">
+                                    <a class="about-links" href="skills">Skills</a>
+                                    <img class="arrow" src="images/arrow.png"></img>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <script src="js/menu-button.js"></script>   
+    <script src="js/nav-button.js"></script>   
 </body>
 </html>

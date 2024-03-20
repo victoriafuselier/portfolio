@@ -54,8 +54,8 @@ body {
 main,
 .home,
 .home-wrapper,
-.menu,
-.menu-wrapper,
+.nav,
+.nav-wrapper,
 .about,
 .contact,
 .contact-wrapper,
@@ -66,7 +66,7 @@ main,
 }
 
 .home,
-.menu,
+.nav,
 .about,
 .contact,
 .projects {
@@ -115,29 +115,26 @@ header {
     align-items: center;
 }
 
-.menu {
+.nav {
     display: none;
 }
 
-.menu-wrapper {
+.nav-wrapper {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin: 0 10vw;
 }
 
-.menu-button {
-    background: transparent;
-    border: none;
-    fill: white;
+.nav-link {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
     z-index: 7;
+    font-weight: 600;
 }
 
-.menu-button:hover {
-    cursor: pointer;
-}
-
-.menu-button .bar {
+.nav-button .bar {
     transition:
         y 300ms ease-in 300ms,
         rotate 300ms ease-in,
@@ -145,44 +142,45 @@ header {
     transform-origin: center;
 }
 
-.menu-button[aria-expanded="true"] .bar {
+.nav-button[aria-expanded="true"] .bar {
     transition:
         y 300ms ease-in,
         rotate 300ms ease-in 300ms,
         opacity 0ms 300ms;
 }
 
-.menu-button[aria-expanded="true"] .top,
-.menu-button[aria-expanded="true"] .bottom {
+.nav-button[aria-expanded="true"] .top,
+.nav-button[aria-expanded="true"] .bottom {
     y: 45;
 }
 
-.menu-button[aria-expanded="true"] .top {
+.nav-button[aria-expanded="true"] .top {
     rotate: 45deg;
 }
 
-.menu-button[aria-expanded="true"] .middle {
+.nav-button[aria-expanded="true"] .middle {
     opacity: 0;
 }
 
-.menu-button[aria-expanded="true"] .bottom {
+.nav-button[aria-expanded="true"] .bottom {
     rotate: -45deg;
 }
 
-.menu-wrapper ul {
+.nav-wrapper ul {
     list-style-type: circle;
     height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 10vw;
+    font-weight: 600;
 }
 
-.menu li::marker {
+.nav li::marker {
     font-size: 2rem;
 }
 
-.menu-wrapper button {
+.nav-button {
     font-size: 2.3rem;
     font-weight: 600;
     font-family: "Unica One", sans-serif;
@@ -264,7 +262,7 @@ header {
     justify-content: center;
 }
 
-.about-wrapper {
+.about-content-wrapper {
     max-width: 350px;
 }
 
@@ -398,3 +396,51 @@ textarea {
 #send-button:hover {
     transform: scale(1.3);
 }
+
+/* ============================================================================================================
+                                                
+                                            PROJECT PAGE STYLING
+
+===============================================================================================================*/
+
+/* ============================================================================================================
+                                                
+                                                MEDIA QUERIES
+
+===============================================================================================================*/
+
+/* @media screen and (min-width: 320px) {
+    :root {
+        --left-right-margin: 24px;
+        --top-margin: 84px;
+        --border: 1.5px;
+        --border-radius: 24px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    :root {
+        --left-right-margin: 24px;
+        --top-margin: 84px;
+        --border: 1.5px;
+        --border-radius: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --left-right-margin: 24px;
+        --top-margin: 84px;
+        --border: 1.5px;
+        --border-radius: 24px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --left-right-margin: 24px;
+        --top-margin: 84px;
+        --border: 1.5px;
+        --border-radius: 24px;
+    }
+} */

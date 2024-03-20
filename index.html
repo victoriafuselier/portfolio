@@ -19,7 +19,7 @@
                 <ul>
                     <p>X</p>
                     <p>X</p>
-                    <button class="menu-button" aria-controls="primary-navigation" aria-expanded="false">
+                    <button id="home-nav-button" class="nav-button" aria-controls="primary-navigation" aria-expanded="false">
                         <svg fill="white" class="hamburger" viewBox="0 0 100 100" width="40">
                             <rect class="top bar" width="80" height="10" x="10" y="25" rx="5"></rect>
                             <rect class="middle bar" width="80" height="10" x="10" y="45" rx="5"></rect>
@@ -31,8 +31,8 @@
         </div>
     </header>
     <main>
-        <div class="menu">
-            <div class="menu-wrapper">
+        <div class="nav">
+            <div class="nav-wrapper">
                 <ul>
                     <li>
                         <a href="index.html" class="nav-link">Home</a>
@@ -49,22 +49,24 @@
                 </ul>
             </div>
         </div>
-        <div class="home">
-            <div class="home-wrapper">
-                <div class="intro-text">
-                    <h1>Hi, I'm <div class="name">Victoria Fuselier</div></h1>
-                    <h1>But you can call me <div class="name" id="nickname">Vic</div></h1>
-                    <div class="intro-role-wrapper">
-                        <p>Junior Front-End Web Developer</p>
-                    </div>
-                    <div class="intro-links-container">
-                        <div class="intro-link-wrapper" id="about-link-wrapper">
-                            <a href="about.html">About Me</a>
-                            <img class="arrow" src="images/arrow.png"></img>
+        <div class="page-content">
+            <div class="home">
+                <div class="home-wrapper">
+                    <div class="intro-text">
+                        <h1>Hi, I'm <div class="name">Victoria Fuselier</div></h1>
+                        <h1>But you can call me <div class="name" id="nickname">Vic</div></h1>
+                        <div class="intro-role-wrapper">
+                            <p>Junior Front-End Web Developer</p>
                         </div>
-                        <div class="intro-link-wrapper" id="projects-link-wrapper">
-                            <a href="projects.html">My Projects</a>
-                            <img class="arrow" src="images/arrow.png"></img>
+                        <div class="intro-links-container">
+                            <div class="intro-link-wrapper" id="about-link-wrapper">
+                                <a href="about.html">About Me</a>
+                                <img class="arrow" src="images/arrow.png"></img>
+                            </div>
+                            <div class="intro-link-wrapper" id="projects-link-wrapper">
+                                <a href="projects.html">My Projects</a>
+                                <img class="arrow" src="images/arrow.png"></img>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -74,6 +76,6 @@
     <footer>
 
     </footer>
-    <script src="js/menu-button.js"></script>   
+    <script src="js/nav-button.js"></script>   
 </body>
 </html>
