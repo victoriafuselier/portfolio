@@ -340,7 +340,7 @@ form {
     border: 3px solid white;
     border-radius: 5px;
     padding: 15px 10px;
-    max-width: 300px;
+    max-width: 250px;
     background-color: var(--dark-slate-grey);
 }
 
@@ -353,6 +353,10 @@ form h2,
 form p,
 #send-button {
     text-align: center;
+}
+
+form label {
+    font-weight: 900;
 }
 
 input,
