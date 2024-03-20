@@ -8,11 +8,12 @@
     --asparagus: #7FB069;
     --dark-green: #47682C;
     --dark-slate-grey: #19323c;
-
+    --dark-blue-grey: #13262F;
 }
 
 body {
-                url(../images/stars.jpg);
+    background: linear-gradient(rgba(25, 50, 60, .75), rgba(65, 101, 138, .75)),
+        url(../images/stars.jpg);
     background-size: 200%;
     overflow: hidden;
     animation: backgroundFlow 400s ease infinite;
@@ -337,15 +338,15 @@ form,
 }
 
 form {
-    border: 3px solid white;
+    border: none;
     border-radius: 5px;
     padding: 15px 10px;
     max-width: 250px;
-    background-color: var(--dark-slate-grey);
+    background-color: var(--dark-blue-grey);
 }
 
 form h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
