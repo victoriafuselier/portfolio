@@ -350,7 +350,7 @@ form {
 }
 
 form h2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
@@ -472,16 +472,24 @@ textarea {
     }
 
     form h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     form label {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     input,
     textarea {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    textarea {
+        height: 50px;
+    }
+
+    #send-button {
+        font-size: 1.1rem;
     }
 }
 
@@ -539,7 +547,24 @@ textarea {
     }
 
     form h2 {
+        font-size: 1.6rem;
+    }
+
+    form label {
         font-size: 1.3rem;
+    }
+
+    input,
+    textarea {
+        font-size: 1.2rem;
+    }
+
+    textarea {
+        height: 75px;
+    }
+
+    #send-button {
+        font-size: 1.2rem;
     }
 }
 
