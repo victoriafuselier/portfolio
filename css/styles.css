@@ -58,9 +58,7 @@ main,
 .nav-wrapper,
 .about,
 .contact,
-.contact-wrapper,
-.projects,
-.projects-wrapper {
+.contact-wrapper {
     height: 100vh;
     width: auto;
 }
@@ -68,8 +66,7 @@ main,
 .home,
 .nav,
 .about,
-.contact,
-.projects {
+.contact {
     margin: 0 24px;
 }
 
@@ -409,6 +406,130 @@ textarea {
 
 ===============================================================================================================*/
 
+#projects-main,
+#projects-body {
+    height: 100%;
+}
+
+.projects {
+    /* padding: 2rem 1rem 1rem; */
+}
+
+.projects-wrapper h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.projects-wrapper {
+    margin: 100px 20px 20px;
+}
+
+#portfolio-container {
+    width: 230px;
+    margin: 0 auto;
+}
+
+.project-container {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.project-container,
+.project-photo,
+.project-photo img,
+.photo-overlay {
+    border-radius: 8px;
+}
+
+.project-container img,
+.photo-overlay {
+    max-width: 100%;
+}
+
+.project-photo {
+	position: relative;
+	overflow: hidden;
+}
+
+.project-container:focus .photo-overlay,
+.project-container:hover .photo-overlay {
+    opacity: 1;
+    box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.8), -5px -5px 18px rgba(0, 0, 0, 0.8);
+}
+
+.project-photo a {
+    color: var(--dark-purple);
+    font-weight: 500;
+    font-size: .9rem;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 7%;
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 3px 15px;
+    transition: all .25s ease-out;
+}
+
+.project-photo a:hover,
+.project-photo a:focus {
+    color: var(--white);
+    background-color: var(--dark-green);
+    transform: scale(1.1);
+}
+
+.photo-overlay {
+	color: var(--white);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 3px; 
+	left: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, .8); 
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .25s;
+    overflow: hidden;
+}
+
+.photo-overlay h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    position: absolute;
+    top: 10%;
+}
+
+.photo-overlay p {
+    font-size: .9rem;
+    font-weight: 500;
+    width: 98%;
+    max-width: 98%;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+}
+
+#projects-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--dark-purple);
+    text-align: center;
+}
+
+#projects-footer a {
+    color: white;
+    text-underline-offset: 5px;
+}
+
 /* ============================================================================================================
                                                 
                                                 MEDIA QUERIES
@@ -453,7 +574,8 @@ textarea {
     }
 
     .about h1,
-    .contact h1 {
+    .contact h1,
+    .projects h1 {
         font-size: 2.75rem;
     }
 
@@ -528,7 +650,8 @@ textarea {
     }
 
     .about h1,
-    .contact h1 {
+    .contact h1,
+    .projects h1 {
         font-size: 3rem;
     }
 
@@ -603,3 +726,82 @@ textarea {
         --border-radius: 24px;
     }
 } */
+
+/* ============================================================================================================
+                                                
+                                    MEDIA QUERIES FOR PROJECT PAGE
+
+===============================================================================================================*/
+
+@media (min-width: 400px) {
+    #portfolio-container {
+        width: 300px;
+    }
+
+    .photo-overlay h3 {
+        font-size: 1.5rem;
+    }
+
+    .photo-overlay p {
+        font-size: 1.1rem;
+    }
+
+    .photo-overlay a {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #portfolio-container {
+        width: 700px;
+    }
+
+    #projects-main {
+        height: 100%;
+    }
+
+    #portfolio-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .project-container {
+		width: 47%;
+		float: left;
+	}
+}
+
+@media (min-width: 1024px) {
+    #portfolio-container {
+        width: 1000px;
+    }
+
+    #projects-main {
+        max-width: unset;
+    }
+
+    .project-container {
+		width: 32%;
+		float: left;
+	}
+
+    .photo-overlay h3 {
+        font-size: 1.4rem;
+        top: 8%;
+    }
+
+    .photo-overlay p {
+        font-size: 1.1rem;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .photo-overlay p {
+        font-size: 1.2rem;
+    }
+
+}
