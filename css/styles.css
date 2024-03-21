@@ -15,7 +15,7 @@ body {
     background: linear-gradient(rgba(25, 50, 60, .75), rgba(65, 101, 138, .75)),
         url(../images/stars.jpg);
     background-size: 200%;
-    overflow: hidden;
+    /* overflow: hidden; */
     animation: backgroundFlow 400s ease infinite;
     color: white;
     font-family: 'Unica One', sans-serif;
@@ -266,6 +266,10 @@ header {
     max-width: 350px;
 }
 
+.about h1 {
+    text-align: center;    
+}
+
 #about-photo {
     height: 150px;
     margin-top: 20px;
@@ -305,13 +309,15 @@ header {
 
 form,
 .contact-links-wrapper {
-    margin-top: 20px;
+    margin-top: 15px;
+    width: 100%;
 }
 
 .contact ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .contact svg {
@@ -408,6 +414,117 @@ textarea {
                                                 MEDIA QUERIES
 
 ===============================================================================================================*/
+
+@media screen and (min-width: 768px) {
+    .intro-text h1 {
+        font-size: 1.75rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .name {
+        font-size: 2.5rem;
+        margin-left: 7px;
+    }
+
+    .intro-role-wrapper {
+        font-size: 1.6rem;
+    }
+
+    .intro-links-container a {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 2.5rem;
+    }
+
+    .about-content-wrapper {
+        max-width: 550px;
+    }
+
+    .about-text p {
+        max-width: 400px;
+        font-size: 1.5rem;
+    }
+
+    #about-photo {
+        height: 200px;
+    }
+
+    .about h1,
+    .contact h1 {
+        font-size: 2.75rem;
+    }
+
+    .about-links-container a {
+        font-size: 1.75rem;
+    }
+
+    form,
+    .contact-links-wrapper {
+        margin-top: 20px;
+    }
+
+    .contact svg {
+        height: 30px;
+        width: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .intro-role-wrapper {
+        font-size: 1.8rem;
+    }
+
+    .intro-links-container a {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        font-size: 3rem;
+    }
+
+    .about-content-wrapper {
+        max-width: 475px;
+    }
+
+    .about-text p {
+        max-width: 475px;
+        font-size: 1.75rem;
+    }
+
+    #about-photo {
+        height: 250px;
+    }
+
+    .about h1,
+    .contact h1 {
+        font-size: 3rem;
+    }
+
+    .about-links-container a {
+        font-size: 2rem;
+    }
+
+    form,
+    .contact-links-wrapper {
+        margin-top: 30px;
+    }
+
+    .contact svg {
+        height: 35px;
+        width: 55px;
+    }
+}
 
 /* @media screen and (min-width: 320px) {
     :root {
