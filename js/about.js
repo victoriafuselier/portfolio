@@ -3,8 +3,8 @@ const skillsButton = document.querySelector('#skills-button');
 const popUpDiv = document.querySelector('#pop-up-div');
 
 educationButton.addEventListener('click', () => {
-    if (popUpDiv.classList.contains('hide')) {
-        popUpDiv.classList.remove('hide');
+    if (popUpDiv.classList.contains('hidden')) {
+        popUpDiv.classList.remove('hidden');
     }
 
     popUpDiv.style.display = 'block';
@@ -26,8 +26,8 @@ educationButton.addEventListener('click', () => {
 });
 
 skillsButton.addEventListener('click', () => {
-    if (popUpDiv.classList.contains('hide')) {
-        popUpDiv.classList.remove('hide');
+    if (popUpDiv.classList.contains('hidden')) {
+        popUpDiv.classList.remove('hidden');
     }
     
     popUpDiv.innerHTML =    `<div id='pop-up-box'>
@@ -72,13 +72,12 @@ skillsButton.addEventListener('click', () => {
                                     <li>Accessibility</li>
                                     <li>Familiarity with Resources</li>
                                     <li>Currently Working On:</li>
-                                        <ul>
+                                        <ul class="sublist">
                                             <li>Practicing & Solidifying Previously-Listed Skills</li>
-                                            <li>Completing Treehouse Web Design Track</li>
                                             <li>Refactoring & Improving Portfolio Projects</li>
                                         </ul>
                                     <li>Want to Learn Next:</li>
-                                        <ul>
+                                        <ul class="sublist">
                                             <li>C# Basics</li>
                                             <li>SQL</li>
                                         </ul>
@@ -93,7 +92,7 @@ skillsButton.addEventListener('click', () => {
 
 popUpDiv.addEventListener('click', (e) => {
     if (e.target.classList.contains('close')) {
-        popUpDiv.classList.add('hide');
+        popUpDiv.classList.add('hidden');
         popUpDiv.innerHTML = ``;
         popUpDiv.style.height = '0px';
     }
