@@ -57,6 +57,7 @@ main,
 .nav,
 .nav-wrapper,
 .about,
+.about-wrapper,
 .contact,
 .contact-wrapper {
     height: 100vh;
@@ -100,7 +101,6 @@ header {
 .right-header-content {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
 }
 
@@ -178,15 +178,15 @@ header {
 }
 
 .nav-button {
-    font-size: 2.3rem;
     font-weight: 600;
     font-family: "Unica One", sans-serif;
-    width: fit-content;
+    width: 40px;
     background: transparent;
     border: none;
     color: white;
     z-index: 3;
     cursor: pointer;
+    height: 40px;
 }
 
 a:visited {
@@ -199,16 +199,29 @@ a:visited {
 
 ===============================================================================================================*/
 
-.intro-text {
+.home-wrapper,
+.about-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text,
+.about-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
     text-align: center;
+    width: fit-content;
 }
 
-.intro-text h1 {
+.intro-text h1,
+.about-text h1,
+.projects-wrapper h1
+.contact-wrapper h1 {
     font-size: 1.5rem;
 }
 
@@ -244,6 +257,11 @@ a:visited {
     font-family: 'Unica One';
 }
 
+.intro-links-container,
+.about-button-container {
+    width: 100%;
+}
+
 .intro-link-wrapper:first-of-type,
 .about-button-wrapper:first-of-type {
     margin-bottom: 15px;
@@ -259,19 +277,18 @@ a:visited {
 
 ===============================================================================================================*/
 
-.about {
+/* .about {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
 .about-content-wrapper {
-    max-width: 350px;
-}
-
-.about h1 {
-    text-align: center;    
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
 }
 
 #about-photo {
@@ -281,8 +298,6 @@ a:visited {
 }
 
 .about-text p {
-    margin: 20px 0 40px;
-    max-width: 255px;
     font-family: 'Fira Sans Condensed';
 }
 
@@ -683,10 +698,30 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
+    .intro-links-container,
+    .about-button-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .intro-link-wrapper:first-of-type, 
+    .about-button-wrapper:first-of-type {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 768px) {
     .intro-text h1 {
-        font-size: 1.75rem;
         display: flex;
         align-items: center;
+    }
+    
+    .about-text h1,
+    .projects-wrapper h1
+    .contact-wrapper h1 {
+        font-size: 1.75rem;
     }
 
     .name {
@@ -711,8 +746,7 @@ textarea {
     }
 
     .about-text p {
-        max-width: 400px;
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
 
     #about-photo {
@@ -792,7 +826,10 @@ textarea {
 
 
 @media (min-width: 1024px) {
-    .intro-text h1 {
+    .intro-text h1,
+    .about-text h1,
+    .projects-wrapper h1
+    .contact-wrapper h1 {
         font-size: 2rem;
     }
 
@@ -805,7 +842,7 @@ textarea {
     }
 
     .intro-links-container a {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .nav-link {
@@ -817,8 +854,7 @@ textarea {
     }
 
     .about-text p {
-        max-width: 475px;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     #about-photo {
