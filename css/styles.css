@@ -21,7 +21,7 @@ body {
     background: linear-gradient(rgba(25, 50, 60, .75), rgba(65, 101, 138, .75)),
         url(../images/stars.jpg);
     background-size: 200%;
-    /* overflow: hidden; */
+    overflow: hidden;
     animation: backgroundFlow 400s ease infinite;
     color: white;
     font-family: 'Unica One', sans-serif;
@@ -72,11 +72,6 @@ main,
 .nav,
 .contact {
     margin: 0 24px;
-}
-
-body,
-main {
-    height: auto;
 }
 
 a:visited {
@@ -282,59 +277,26 @@ header {
 
 ===============================================================================================================*/
 
-#about-body  {
-    min-height: 100vh;
-    width: 100%;
-    height: auto;
-}
-
-#about-main {
-
-}
-
 .about {
-    margin-top: 100px;
+    margin: 100px auto;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
 }
 
-.about-right,
-.profile-img-container {
-    overflow-y: hidden;
-}
-
-.about-right,
-.profile-img-wrapper,
 .profile-img {
-    object-fit: cover;
-}
-
-.profile-img-container {
-    position: relative;
-    background-color: #606887;
-}
-
-.profile-img-container,
-.profile-img {
-    mix-blend-mode: luminosity;
-    border-radius: 20px;
-    opacity: .75;
-    max-width: 316px;
-    max-height: 527px;
-    margin: 0 auto;
-}
-
-.profile-img {
-    position: absolute;
     height: 100%;
     width: 100%;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
     color: transparent;
+    border-radius: 20%;
+    opacity: .75;
+    margin: auto;
+}
+
+.about,
+.profile-img {
+    max-width: 350px;
 }
 
 .about-heading {
@@ -388,7 +350,7 @@ header {
 .about-button-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
 }
@@ -499,7 +461,7 @@ header {
     text-underline-offset: 2px;
 }
 
-@media (max-width: 992px ) and (orientation: portrait) {
+@media (max-width: 992px) and (orientation: portrait) {
     .about-right {
         width: 100%;
         padding: 0 24px;
@@ -516,6 +478,35 @@ header {
     .about-left {
         padding: 24px;
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about {
+        flex-direction: row;
+    }
+
+    .about-right,
+    .about-left {
+        width: 50%;
+    }
+
+    .about-left {
+        padding: 20px;
+    }
+
+    .about-right {
+        padding: 0 0 0 25px;
+    }
+
+    .profile-img-container {
+        margin: 0;
+    }
+
+    .profile-img-container,
+    .profile-img {
+        max-width: 200px;
+        max-height: 200px;
     }
 }
 
