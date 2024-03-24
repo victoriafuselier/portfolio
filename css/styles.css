@@ -310,10 +310,11 @@ header {
     margin-bottom: 0;
 }
 
-.about-left p {
+.about-p {
     margin-top: 24px;
     width: 100%;
     font-family: 'Fira Sans Condensed';
+    text-align: left;
 }
 
 .about-button-container {
@@ -476,39 +477,134 @@ header {
     }
 
     .about-left {
-        padding: 24px;
+        padding: 3rem 1rem;
         width: 100%;
+    }
+
+    .about-button-container {
+        margin-top: 3rem;
+    }
+
+    .about-button-wrapper:first-of-type {
+        margin-bottom: 20px;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
+
+    #about-html,
+    #about-body,
+    #about-main,
+    #about-page-content,
+    .about {
+        height: 100%;
+    }
+
     .about {
         flex-direction: row;
-    }
-
-    .about-right,
-    .about-left {
-        width: 50%;
-    }
-
-    .about-left {
-        padding: 20px;
+        margin: auto;
     }
 
     .about-right {
-        padding: 0 0 0 25px;
+        width: 40%;
+        padding: 0 0 0 24px;
+    }
+
+    .about-left {
+        width: 60%;
+        padding: 0 0 0 40px;
+    }
+
+    .about-p {
+        margin-top: 12px;
+    }
+
+    .about-button-container {
+        margin-top: 2rem;
+    }
+
+    .about-button-container {
+        flex-direction: row;
+        align-items: unset;
+        justify-content: space-evenly;
+    }
+
+    .about-button-wrapper:first-of-type {
+        margin-bottom: 0;
+    }
+
+    /* .about-right {
+        padding: 0 0 0 30px;
+    } */
+
+    .about,
+    .profile-img {
+        max-width: unset;
     }
 
     .profile-img-container {
         margin: 0;
     }
-
-    .profile-img-container,
+    
     .profile-img {
-        max-width: 200px;
-        max-height: 200px;
+        border-radius: 20% 0 0 20%;
+    }
+
+    .divider-line {
+            width: 100%;
+            margin-top: 6px;
+        }
+}
+
+@media screen and (min-width: 768px) {
+
+    .intro-links-container,
+    .about-button-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .intro-link-wrapper:first-of-type, 
+    .about-button-wrapper:first-of-type {
+        margin-bottom: 0px;
+    }
+
+    .about-left {
+        width: 70%;
+        padding: 0 0 0 60px;
+    }
+
+    .about-p {
+        font-size: 1.2rem;
+    }
+
+    .about-right {
+        width: 30%;
     }
 }
+
+@media screen and (min-width: 1024px) {
+
+    .about {
+        max-width: 1000px;
+    }
+
+    .about-p {
+        font-size: 1.4rem;
+    }
+
+    .profile-img {
+        border-radius: 20%;
+    }
+
+    .about-left {
+        width: 70%;
+        padding: 0 0 0 80px;
+    }
+}
+
 
 /* ============================================================================================================
                                                 
@@ -749,16 +845,11 @@ textarea {
 
 @media (min-width: 400px) {
 
-    .intro-text h1,
-    .about-text h1,
-    .projects-wrapper h1
-    .contact-wrapper h1 {
+    .intro h1,
+    .about h1,
+    .projects h1
+    .contact h1 {
         font-size: 2rem;
-    }
-
-    .about-text {
-        max-width: 350px;
-        margin: 0 auto;
     }
 
     #portfolio-container {
@@ -793,40 +884,15 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
-
-    .intro-links-container,
-    .about-button-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .intro-link-wrapper:first-of-type, 
-    .about-button-wrapper:first-of-type {
-        margin-bottom: 0px;
-    }
-
-    .about-text {
-        max-width: 800px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-                    'heading img'
-                    'pg img'
-                    'btns btns'
-    }
-
     .intro-text h1 {
         display: flex;
         align-items: center;
     }
-    
 
-    .intro-text h1,
-    .about-text h1,
-    .projects-wrapper h1
-    .contact-wrapper h1 {
+    .intro h1,
+    .about h1,
+    .projects h1
+    .contact h1 {
         font-size: 2.25rem;
     }
 
@@ -846,11 +912,6 @@ textarea {
 
     .nav-link {
         font-size: 2.5rem;
-    }
-
-    .about p {
-        font-size: 1.2rem;
-        padding: 10px;
     }
 
     .about h1,
