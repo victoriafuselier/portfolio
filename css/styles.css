@@ -1,3 +1,9 @@
+/* ============================================================================================================
+                                                
+                                            GENERAL STYLING
+
+===============================================================================================================*/
+
 * {
     margin: 0;
     padding: 0;
@@ -64,9 +70,17 @@ main,
 
 .home,
 .nav,
-.about,
 .contact {
     margin: 0 24px;
+}
+
+body,
+main {
+    height: auto;
+}
+
+a:visited {
+    color: currentColor;
 }
 
 /* ============================================================================================================
@@ -109,6 +123,12 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+/* ============================================================================================================
+                                                
+                                                NAV STYLING
+
+===============================================================================================================*/
 
 .nav {
     display: none;
@@ -187,10 +207,6 @@ header {
     height: 40px;
 }
 
-a:visited {
-    color: currentColor;
-}
-
 /* ============================================================================================================
                                                 
                                             HOME PAGE STYLING
@@ -204,8 +220,7 @@ a:visited {
     align-items: center;
 }
 
-.intro-text,
-.about-text {
+.intro-text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,11 +230,8 @@ a:visited {
     width: fit-content;
 }
 
-.intro-text h1,
-.about-text h1,
-.projects-wrapper h1
-.contact-wrapper h1 {
-    font-size: 1.5rem;
+.intro-text h1 {
+    font-size: 1.75rem;
 }
 
 .name {
@@ -234,16 +246,14 @@ a:visited {
     margin: 10px 0 25px;
 }
 
-.intro-link-wrapper,
-.about-button-wrapper {
+.intro-link-wrapper {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
 }
 
-.intro-links-container a,
-.about-button-container button {
+.intro-link {
     color: white;
     text-decoration: none;
     font-weight: 600;
@@ -254,13 +264,11 @@ a:visited {
     font-family: 'Unica One';
 }
 
-.intro-links-container,
-.about-button-container {
+.intro-links-container {
     width: 100%;
 }
 
-.intro-link-wrapper:first-of-type,
-.about-button-wrapper:first-of-type {
+.intro-link-wrapper:first-of-type {
     margin-bottom: 15px;
 }
 
@@ -274,49 +282,102 @@ a:visited {
 
 ===============================================================================================================*/
 
-#about-main,
-#about-body {
-    height: 100%;
-}
-
-.about,
-.about-wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+#about-body  {
     min-height: 100vh;
+    width: 100%;
+    height: auto;
 }
 
-.about-middle-wrapper {
-        display: flex;
-        flex-direction: column-reverse;
-        height: 100%;
-        align-items: center;
+#about-main {
+
 }
 
-.about-wrapper,
-.projects-wrapper {
-    padding: calc(5vh + 40px) 0;
+.about {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
 }
 
-#about-photo,
-.about h1,
-.about-button-container {
-    padding: 10px;
-    margin: 10px;
+.about-right,
+.profile-img-container {
+    overflow-y: hidden;
 }
 
-#about-photo {
-    height: 150px;
+.about-right,
+.profile-img-wrapper,
+.profile-img {
+    object-fit: cover;
+}
+
+.profile-img-container {
+    position: relative;
+    background-color: #606887;
+}
+
+.profile-img-container,
+.profile-img {
+    mix-blend-mode: luminosity;
     border-radius: 20px;
+    opacity: .75;
+    max-width: 316px;
+    max-height: 527px;
+    margin: 0 auto;
 }
 
-.about-middle-wrapper p {
+.profile-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    color: transparent;
+}
+
+.about-heading {
+    display: flex;
+    align-items: baseline;
+}
+
+.divider-line {
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.about-left p {
+    margin-top: 24px;
+    width: 100%;
     font-family: 'Fira Sans Condensed';
-    padding: 10px 0px;
-    margin: 10px;
-    max-width: 300px;
+}
+
+.about-button-container {
+    margin-top: 24px;
+}
+
+.about-button {
+    font-size: 1.5rem;
+    background: transparent;
+    color: white;
+    border: none;
+    font-family: 'Unica One', sans-serif;
+}
+
+.about-button-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.about-button-wrapper:first-of-type {
+    margin-bottom: 15px;;
+}
+
+.about-button {
+    margin-left: 5px;
 }
 
 .message-link {
@@ -328,6 +389,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
@@ -359,6 +421,7 @@ a:visited {
     width: max-content;
     max-width: 90vw;
     height: min-content;
+    max-height: 90%;
     box-shadow: 5px 5px 18px rgba(230, 230, 250, 0.5), -5px -5px 18px rgba(230, 230, 250, 0.5);
     position: absolute;
     right: 0;
@@ -381,10 +444,6 @@ a:visited {
     background-color: transparent;
     border: none;
     font-weight: 700;
-}
-
-h3 {
-    font-size: 1.3rem;
 }
 
 #education {
@@ -438,6 +497,26 @@ h3 {
 #pop-up-box a {
     color: black;
     text-underline-offset: 2px;
+}
+
+@media (max-width: 992px ) and (orientation: portrait) {
+    .about-right {
+        width: 100%;
+        padding: 0 24px;
+    }
+
+    .profile-img-container {
+        height: calc((100vw - (2 * 24px))* 1.3333333333);
+    }
+
+    .about-right .profile-pic-wrapper .profile-pic {
+        border-radius: 20px;
+    }
+
+    .about-left {
+        padding: 24px;
+        width: 100%;
+    }
 }
 
 /* ============================================================================================================
@@ -678,6 +757,19 @@ textarea {
 ===============================================================================================================*/
 
 @media (min-width: 400px) {
+
+    .intro-text h1,
+    .about-text h1,
+    .projects-wrapper h1
+    .contact-wrapper h1 {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
     #portfolio-container {
         width: 300px;
     }
@@ -698,8 +790,14 @@ textarea {
         width: 380px;
     }
 
-    .about-wrapper {
-        padding: 0;
+    .about-wrapper, 
+    .projects-wrapper {
+        font-size: 1.2rem;
+    }
+
+    .intro-link,
+    .about-button {
+        font-size: 1.5rem;
     }
 }
 
@@ -718,18 +816,27 @@ textarea {
         margin-bottom: 0px;
     }
 
-    .about-middle-wrapper {
-        flex-direction: row-reverse;
+    .about-text {
+        max-width: 800px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+                    'heading img'
+                    'pg img'
+                    'btns btns'
     }
+
     .intro-text h1 {
         display: flex;
         align-items: center;
     }
     
+
+    .intro-text h1,
     .about-text h1,
     .projects-wrapper h1
     .contact-wrapper h1 {
-        font-size: 1.75rem;
+        font-size: 2.25rem;
     }
 
     .name {
@@ -741,24 +848,18 @@ textarea {
         font-size: 1.6rem;
     }
 
-    .intro-links-container a {
-        font-size: 1.5rem;
+    .intro-link,
+    .about-button {
+        font-size: 1.75rem;
     }
 
     .nav-link {
         font-size: 2.5rem;
     }
 
-    .about-content-wrapper {
-        max-width: 550px;
-    }
-
-    .about-middle-wrapper p {
-        font-size: 1.1rem;
-    }
-
-    #about-photo {
-        height: 250px;
+    .about p {
+        font-size: 1.2rem;
+        padding: 10px;
     }
 
     .about h1,
@@ -767,8 +868,8 @@ textarea {
         font-size: 2.75rem;
     }
 
-    .about-button-container button {
-        font-size: 1.75rem;
+    .about-button-container {
+        margin-top: 25px;
     }
 
     form,
@@ -833,7 +934,7 @@ textarea {
     .about-text h1,
     .projects-wrapper h1
     .contact-wrapper h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .name {
@@ -850,18 +951,6 @@ textarea {
 
     .nav-link {
         font-size: 3rem;
-    }
-
-    .about-content-wrapper {
-        max-width: 475px;
-    }
-
-    .about-middle-wrapper p {
-        font-size: 1.25rem;
-    }
-
-    #about-photo {
-        height: 300px;
     }
 
     .about h1,
@@ -907,10 +996,6 @@ textarea {
 
     #portfolio-container {
         width: 1000px;
-    }
-
-    #projects-main {
-        max-width: unset;
     }
 
     .project-container {
