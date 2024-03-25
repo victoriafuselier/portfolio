@@ -131,15 +131,25 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 0 10vw;
 }
 
 .nav-link {
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-decoration: none;
     z-index: 3;
     font-weight: 600;
+}
+
+.nav li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-arrow {
+    margin-right: 10px;
+    width: 15px;
 }
 
 .nav-button .bar {
@@ -175,17 +185,13 @@ header {
 }
 
 .nav-wrapper ul {
-    list-style-type: circle;
+    /* list-style: url('../images/arrow.png'); */
+    list-style-type: none;
     height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 10vw;
     font-weight: 600;
-}
-
-.nav li::marker {
-    font-size: 2rem;
 }
 
 .nav-button {
@@ -223,8 +229,8 @@ header {
     width: fit-content;
 }
 
-.intro-text h1 {
-    font-size: 1.75rem;
+.home h1 {
+    font-size: 1rem;
 }
 
 .name {
@@ -235,8 +241,9 @@ header {
     font-size: 1rem;
     border-bottom: 0.5px dashed white;
     border-top: 0.5px dashed white;
-    padding: 5px 0px;
+    padding: 5px 10px;
     margin: 10px 0 25px;
+    font-weight: 600;
 }
 
 .intro-link-wrapper {
@@ -751,7 +758,10 @@ textarea {
 
 @media (min-width: 400px) {
 
-    .intro h1,
+    .home h1 {
+        font-size: 1.5rem;
+    }
+
     .about h1,
     .projects h1
     .contact h1 {
@@ -795,7 +805,25 @@ textarea {
     .intro-role-wrapper {
         font-size: 1.25rem;
     }
+
+    .nav-link {
+        font-size: 3rem;
+    }
+    
+    .nav li::marker {
+        font-size: 2.4rem;
+    }
+
+    .nav-arrow {
+        width: 30px;
+    }
+
+    .nav-wrapper {
+        margin-left: 40px;
+    }
+
 }
+
 @media (max-width: 992px) and (orientation: portrait) {
     .about-right {
         width: 100%;
@@ -895,6 +923,26 @@ textarea {
     .contact-left {
         margin-right: 40px;
     }
+
+    .nav-link {
+        font-size: 4rem;
+    }
+
+    .nav li::marker {
+        font-size: 3rem;
+    }
+
+    .nav-arrow {
+        width: 40px;
+    }
+
+    .home h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-wrapper {
+        margin-left: 80px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -903,7 +951,6 @@ textarea {
         align-items: center;
     }
 
-    .intro h1,
     .about h1,
     .projects h1
     .contact h1 {
@@ -916,16 +963,12 @@ textarea {
     }
 
     .intro-role-wrapper {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .intro-link,
     .about-button {
         font-size: 1.75rem;
-    }
-
-    .nav-link {
-        font-size: 2.5rem;
     }
 
     .about h1,
@@ -1023,11 +1066,23 @@ textarea {
     .projects-heading {
         align-items: flex-start;
     }
+
+    .nav li::marker {
+        font-size: 3.5rem;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .nav-wrapper {
+        margin-left: 120px;
+    }
 }
 
 
 @media (min-width: 1024px) {
-    .intro-text h1,
+
     .about-text h1,
     .projects-wrapper h1
     .contact-wrapper h1 {
@@ -1039,7 +1094,7 @@ textarea {
     }
 
     .intro-role-wrapper {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
     }
 
     .intro-links-container a {
@@ -1047,7 +1102,7 @@ textarea {
     }
 
     .nav-link {
-        font-size: 3rem;
+        font-size: 5rem;
     }
 
     .about h1,
@@ -1126,6 +1181,22 @@ textarea {
     .about-left {
         width: 70%;
         padding: 0 0 0 80px;
+    }
+
+    .nav li::marker {
+        font-size: 4rem;
+    }
+
+    .nav-arrow {
+        width: 50px;
+    }
+
+    .home h1 {
+        font-size: 2.3rem;
+    }
+
+    .nav-wrapper {
+        margin-left: 140px;
     }
 }
 
