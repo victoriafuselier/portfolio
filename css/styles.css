@@ -283,6 +283,7 @@ header {
 
 #about-html {
     overflow: auto;
+    height: auto;
 }
 
 #about-main {
@@ -290,20 +291,27 @@ header {
 }
 
 .about {
-    margin: 100px auto;
+    margin: 100px auto 0;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
 }
 
+.about h1 {
+    font-size: 2rem;
+}
+
 .profile-img {
     height: 100%;
     width: 100%;
-    color: transparent;
     border-radius: 20%;
-    opacity: .75;
     margin: auto;
+    opacity: .9;
+}
+
+.about-right {
+    padding: 0 20px;
 }
 
 .about,
@@ -515,7 +523,7 @@ header {
 }
 
 .contact h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
 }
 
 form,
@@ -763,7 +771,6 @@ textarea {
         font-size: 1.5rem;
     }
 
-    .about h1,
     .projects h1 {
         font-size: 2rem;
     }
@@ -797,8 +804,11 @@ textarea {
         font-size: 1.2rem;
     }
 
-    .intro-link,
-    .about-button {
+    .about-left {
+        padding: 3rem 1rem;
+    }
+
+    .intro-link {
         font-size: 1.5rem;
     }
 
@@ -840,24 +850,15 @@ textarea {
 @media (max-width: 992px) and (orientation: portrait) {
     .about-right {
         width: 100%;
-        padding: 0 24px;
     }
 
-    .profile-img-container {
-        height: calc((100vw - (2 * 24px))* 1.3333333333);
-    }
-
-    .about-right .profile-pic-wrapper .profile-pic {
+    /* .about-right .profile-pic-wrapper .profile-pic {
         border-radius: 20px;
-    }
+    } */
 
     .about-left {
-        padding: 3rem 1rem;
+        padding: 2rem 1rem;
         width: 100%;
-    }
-
-    .about-button-container {
-        margin-top: 3rem;
     }
 
     .about-button-wrapper:first-of-type {
@@ -880,9 +881,17 @@ textarea {
         margin: auto;
     }
 
+    .about h1 {
+        font-size: 2.75rem;
+    }
+
     .about-right {
         width: 40%;
-        padding: 0 0 0 24px;
+        padding: 0;
+    }
+
+    .profile-img {
+        padding: 0;
     }
 
     .about-left {
@@ -892,33 +901,24 @@ textarea {
 
     .about-p {
         margin-top: 12px;
-    }
-
-    .about-button-container {
-        margin-top: 2rem;
+        padding-right: 30px;
     }
 
     .about-button-container {
         flex-direction: row;
         align-items: unset;
         justify-content: space-evenly;
+        padding-top: 20px;
+        margin-top: 0;
     }
 
     .about-button-wrapper:first-of-type {
         margin-bottom: 0;
     }
 
-    /* .about-right {
-        padding: 0 0 0 30px;
-    } */
-
     .about,
     .profile-img {
         max-width: unset;
-    }
-
-    .profile-img-container {
-        margin: 0;
     }
     
     .profile-img {
@@ -956,7 +956,10 @@ textarea {
         align-items: center;
     }
 
-    .about h1,
+    .about h1 {
+        font-size: 3rem;
+    }
+
     .projects h1 {
         font-size: 2rem;
     }
@@ -974,22 +977,16 @@ textarea {
         font-size: 1.8rem;
     }
 
-    .intro-link,
-    .about-button {
+    .intro-link {
         font-size: 1.75rem;
     }
 
-    .about h1,
     .projects h1 {
         font-size: 2.75rem;
     }
 
     .contact h1 {
         font-size: 3rem;
-    }
-
-    .about-button-container {
-        margin-top: 25px;
     }
 
     form,
@@ -1098,7 +1095,10 @@ textarea {
 
 @media (min-width: 1024px) {
 
-    .about-text h1,
+    .about h1 {
+        font-size: 3.5rem;
+    }
+
     .projects-wrapper h1 {
         font-size: 2.5rem;
     }
@@ -1123,12 +1123,11 @@ textarea {
         font-size: 5rem;
     }
 
-    .about h1,
     .projects h1 {
         font-size: 2.5rem;
     }
 
-    .about-button-container button {
+    .about-button {
         font-size: 2rem;
     }
 
