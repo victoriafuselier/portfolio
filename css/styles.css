@@ -275,6 +275,14 @@ header {
 
 ===============================================================================================================*/
 
+#about-html {
+    overflow: auto;
+}
+
+#about-main {
+    height: 100%;
+}
+
 .about {
     margin: 100px auto;
     display: flex;
@@ -589,6 +597,14 @@ textarea {
 
 ===============================================================================================================*/
 
+#projects-html {
+    overflow: auto;
+}
+
+#projects-main {
+    height: 100%;
+}
+
 .projects {
     margin: 100px auto;
 }
@@ -599,7 +615,7 @@ textarea {
 
 #portfolio-container {
     width: 230px;
-    margin: calc(5vh + 40px) auto;
+    margin: 20px auto;
 }
 
 .project-container {
@@ -696,6 +712,7 @@ textarea {
     font-weight: 500;
     color: var(--dark-purple);
     text-align: center;
+    margin: 30px;
 }
 
 #projects-footer a {
@@ -924,6 +941,7 @@ textarea {
 
     #portfolio-container {
         width: 700px;
+        margin: 40px auto;
     }
 
     #projects-main {
@@ -1041,6 +1059,7 @@ textarea {
 
     #portfolio-container {
         width: 1000px;
+        margin: 60px auto;
     }
 
     .project-container {
