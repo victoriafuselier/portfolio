@@ -305,9 +305,23 @@ header {
     max-width: 350px;
 }
 
-.about-heading {
+.about-heading,
+.contact-heading,
+.projects-heading {
     display: flex;
+    flex-direction: column;
     align-items: baseline;
+}
+
+.contact-heading,
+.projects-heading {
+    align-items: center;
+}
+
+.projects-heading {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .divider-line {
@@ -497,8 +511,11 @@ header {
 
 form,
 .contact-links-wrapper {
-    margin-top: 15px;
     width: 100%;
+}
+
+.contact-links-wrapper {
+    margin-top: 25px;
 }
 
 .contact ul {
@@ -535,6 +552,7 @@ form {
     padding: 15px 10px;
     max-width: 250px;
     background-color: var(--dark-blue-grey);
+    margin-top: 30px;
 }
 
 form h2 {
@@ -615,7 +633,7 @@ textarea {
 
 #portfolio-container {
     width: 230px;
-    margin: 20px auto;
+    margin: 40px auto;
 }
 
 .project-container {
@@ -650,7 +668,6 @@ textarea {
     color: var(--dark-purple);
     font-weight: 500;
     font-size: .9rem;
-    text-decoration: none;
     cursor: pointer;
     position: absolute;
     bottom: 7%;
@@ -658,6 +675,7 @@ textarea {
     border-radius: 5px;
     padding: 3px 15px;
     transition: all .25s ease-out;
+    text-underline-offset: 2px;
 }
 
 .project-photo a:hover,
@@ -665,6 +683,8 @@ textarea {
     color: var(--white);
     background-color: var(--dark-green);
     transform: scale(1.1);
+    border: none;
+    text-decoration: none;
 }
 
 .photo-overlay {
@@ -683,8 +703,10 @@ textarea {
 	background: rgba(0, 0, 0, .8); 
     opacity: 0;
     transition-property: opacity;
-    transition-duration: .25s;
+    transition-duration: .5s;
     overflow: hidden;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    text-transform: uppercase;
 }
 
 .photo-overlay h3 {
@@ -702,6 +724,7 @@ textarea {
     text-align: center;
     margin: 0;
     line-height: 1;
+    font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 #projects-footer {
@@ -855,7 +878,6 @@ textarea {
 
     .divider-line {
             width: 100%;
-            margin-top: 6px;
         }
 
     .contact-wrapper {
@@ -941,7 +963,7 @@ textarea {
 
     #portfolio-container {
         width: 700px;
-        margin: 40px auto;
+        margin: 50px auto;
     }
 
     #projects-main {
@@ -988,6 +1010,10 @@ textarea {
 
     .about-right {
         width: 30%;
+    }
+
+    .projects-heading {
+        align-items: flex-start;
     }
 }
 
@@ -1059,7 +1085,7 @@ textarea {
 
     #portfolio-container {
         width: 1000px;
-        margin: 60px auto;
+        margin: 80px auto;
     }
 
     .project-container {
