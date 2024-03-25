@@ -298,7 +298,9 @@ header {
     align-items: center;
 }
 
-.about h1 {
+.about h1,
+.projects h1
+.contact h1 {
     font-size: 2rem;
 }
 
@@ -505,12 +507,13 @@ header {
 
 #contact-html {
     overflow: auto;
+    height: auto;
 }
-
+/* 
 #contact-html,
 #contact-body {
     height: 100%;
-}
+} */
 
 .contact {
     margin: 100px auto;
@@ -520,10 +523,6 @@ header {
 
 .contact-heading {
     text-align: center;
-}
-
-.contact h1 {
-    font-size: 2rem;
 }
 
 form,
@@ -771,14 +770,6 @@ textarea {
         font-size: 1.5rem;
     }
 
-    .projects h1 {
-        font-size: 2rem;
-    }
-
-    .contact h1 {
-        font-size: 2.5rem;
-    }
-
     #portfolio-container {
         width: 300px;
     }
@@ -881,7 +872,9 @@ textarea {
         margin: auto;
     }
 
-    .about h1 {
+    .about h1,
+    .projects h1,
+    .contact h1 {
         font-size: 2.75rem;
     }
 
@@ -951,19 +944,13 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
-    .intro-text h1 {
+    .home h1 {
         display: flex;
         align-items: center;
     }
 
-    .about h1 {
-        font-size: 3rem;
-    }
-
-    .projects h1 {
-        font-size: 2rem;
-    }
-
+    .about h1,
+    .projects h1,
     .contact h1 {
         font-size: 3rem;
     }
@@ -979,14 +966,6 @@ textarea {
 
     .intro-link {
         font-size: 1.75rem;
-    }
-
-    .projects h1 {
-        font-size: 2.75rem;
-    }
-
-    .contact h1 {
-        font-size: 3rem;
     }
 
     form,
@@ -1095,14 +1074,8 @@ textarea {
 
 @media (min-width: 1024px) {
 
-    .about h1 {
-        font-size: 3.5rem;
-    }
-
-    .projects-wrapper h1 {
-        font-size: 2.5rem;
-    }
-
+    .about h1,
+    .projects h1,
     .contact h1 {
         font-size: 3.5rem;
     }
@@ -1121,10 +1094,6 @@ textarea {
 
     .nav-link {
         font-size: 5rem;
-    }
-
-    .projects h1 {
-        font-size: 2.5rem;
     }
 
     .about-button {
@@ -1222,6 +1191,13 @@ textarea {
         font-size: 1.2rem;
     }
 
+}
+
+@media screen and (min-height: 700px) {
+    
+    #contact-html {
+        height: 100%;
+    }
 }
 
 /* Deleted this code chunk from about.js... pop up box footer paragraph.. It wouldn't let me comment it out
