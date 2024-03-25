@@ -61,9 +61,7 @@ main,
 .home,
 .home-wrapper,
 .nav,
-.nav-wrapper,
-.contact,
-.contact-wrapper {
+.nav-wrapper {
     height: 100vh;
     width: auto;
 }
@@ -468,6 +466,14 @@ header {
                                             CONTACT PAGE STYLING
 
 ===============================================================================================================*/
+
+#contact-main,
+.page-content,
+.contact,
+.contact-wrapper {
+    height: 100%;
+    min-height: 100vh;
+}
 
 .contact,
 .contact-wrapper {
