@@ -134,7 +134,7 @@ header {
 
 .nav-link {
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     text-decoration: none;
     z-index: 3;
     font-weight: 600;
@@ -184,9 +184,8 @@ header {
 }
 
 .nav-wrapper ul {
-    /* list-style: url('../images/arrow.png'); */
     list-style-type: none;
-    height: 50%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -505,18 +504,26 @@ header {
 
 ===============================================================================================================*/
 
-#contact-html {
-    overflow: auto;
-    height: auto;
-}
-/* 
 #contact-html,
 #contact-body {
+    overflow: auto;
+}
+
+#contact-html,
+#contact-body,
+#contact-main,
+#contact-page-content,
+.contact {
     height: 100%;
-} */
+}
 
 .contact {
-    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-wrapper {
     padding: 20px;
     max-width: 250px;
 }
@@ -567,7 +574,7 @@ form {
     border-radius: 5px;
     padding: 15px 10px;
     background-color: var(--dark-blue-grey);
-    margin: 30px auto;
+    margin: 30px 0px 0px;
 }
 
 form h2 {
@@ -827,7 +834,7 @@ textarea {
         margin-left: 40px;
     }
 
-    .contact {
+    .contact-wrapper {
         max-width: 300px;
     }
 
@@ -923,7 +930,7 @@ textarea {
         }
 
     .nav-link {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .nav li::marker {
@@ -1063,10 +1070,10 @@ textarea {
     }
 
     .nav-wrapper {
-        margin-left: 120px;
+        margin-left: 140px;
     }
 
-    .contact {
+    .contact-wrapper {
         max-width: 350px;
     }
 }
@@ -1093,7 +1100,7 @@ textarea {
     }
 
     .nav-link {
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 
     .about-button {
@@ -1181,7 +1188,7 @@ textarea {
     }
 
     .nav-wrapper {
-        margin-left: 140px;
+        margin-left: 200px;
     }
 }
 
@@ -1193,10 +1200,49 @@ textarea {
 
 }
 
-@media screen and (min-height: 700px) {
-    
-    #contact-html {
-        height: 100%;
+@media screen and (orientation: landscape) and (max-height: 400px) {
+
+    .contact-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-height: 250px;
+    }
+
+    .contact-left {
+        margin-right: 20px;
+    }
+
+    .contact-wrapper {
+        max-width: unset;
+    }
+
+    form,
+    #send-button,
+    form h2 {
+        font-size: 12px;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    input,
+    textarea {
+        height: 20px;
+    }
+
+    .header-wrapper {
+        max-width: 100%;
+    }
+
+    .nav-link {
+        font-size: 2.5rem;
+    }
+
+    .nav-wrapper {
+        margin: 0;
     }
 }
 
