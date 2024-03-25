@@ -787,6 +787,14 @@ textarea {
     .about-button {
         font-size: 1.5rem;
     }
+
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .intro-role-wrapper {
+        font-size: 1.25rem;
+    }
 }
 @media (max-width: 992px) and (orientation: portrait) {
     .about-right {
@@ -899,16 +907,16 @@ textarea {
     .about h1,
     .projects h1
     .contact h1 {
-        font-size: 2.25rem;
+        font-size: 2rem;
     }
 
     .name {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin-left: 7px;
     }
 
     .intro-role-wrapper {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     .intro-link,
@@ -1027,15 +1035,15 @@ textarea {
     }
 
     .name {
-        font-size: 3rem;
+        font-size: 3.75rem;
     }
 
     .intro-role-wrapper {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
 
     .intro-links-container a {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 
     .nav-link {
@@ -1045,7 +1053,7 @@ textarea {
     .about h1,
     .contact h1,
     .projects h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .about-button-container button {
