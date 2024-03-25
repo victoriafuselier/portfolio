@@ -416,8 +416,7 @@ header {
     z-index: 6;
     width: max-content;
     max-width: 90vw;
-    height: min-content;
-    max-height: 90%;
+    height: fit-content;
     box-shadow: 5px 5px 18px rgba(230, 230, 250, 0.5), -5px -5px 18px rgba(230, 230, 250, 0.5);
     position: absolute;
     right: 0;

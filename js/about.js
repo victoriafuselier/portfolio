@@ -1,6 +1,7 @@
 const educationButton = document.querySelector('#education-button');
 const skillsButton = document.querySelector('#skills-button');
 const popUpDiv = document.querySelector('#pop-up-div');
+const main = document.querySelector('main');
 
 educationButton.addEventListener('click', () => {
     if (popUpDiv.classList.contains('hidden')) {
@@ -29,6 +30,10 @@ skillsButton.addEventListener('click', () => {
     if (popUpDiv.classList.contains('hidden')) {
         popUpDiv.classList.remove('hidden');
     }
+
+    popUpDiv.style.display = 'block';
+    popUpDiv.style.height = '100%';
+    popUpDiv.style.width = '100%';
     
     popUpDiv.innerHTML =    `<div id="pop-up-box">
                                 <button class="close">x</button>
@@ -84,6 +89,14 @@ skillsButton.addEventListener('click', () => {
 
 popUpDiv.addEventListener('click', (e) => {
     if (e.target.classList.contains('close')) {
+        popUpDiv.classList.add('hidden');
+        popUpDiv.innerHTML = ``;
+        popUpDiv.style.height = '0px';
+    }
+});
+
+popUpDiv.addEventListener('click', (e) => {
+    if (e.target.classList.contains('pop-up-div')) {
         popUpDiv.classList.add('hidden');
         popUpDiv.innerHTML = ``;
         popUpDiv.style.height = '0px';
