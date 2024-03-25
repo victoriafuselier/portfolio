@@ -111,8 +111,6 @@ header {
 .right-header-content ul {
     display: flex;
     flex-direction: row;
-    width: 100px;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -553,6 +551,12 @@ form,
     width: 45px;
 }
 
+.nav-button,
+.hamburger {
+    height: 40px;
+    width: 40px;
+}
+
 .contact svg:hover,
 .contact svg:focus {
     transform: rotate(30deg) scale(1.2);
@@ -843,6 +847,12 @@ textarea {
         width: 55px;
     }
 
+    .nav-button,
+    .hamburger {
+        height: 55px;
+        width: 55px;
+    }
+
 }
 
 @media (max-width: 992px) and (orientation: portrait) {
@@ -947,6 +957,12 @@ textarea {
 
     .nav-wrapper {
         margin-left: 80px;
+    }
+
+    .nav-button,
+    .hamburger {
+        height: 60px;
+        width: 60px;
     }
 }
 
@@ -1076,6 +1092,12 @@ textarea {
     .contact-wrapper {
         max-width: 350px;
     }
+
+    .nav-button,
+    .hamburger {
+        height: 65px;
+        width: 65px;
+    }
 }
 
 
@@ -1101,6 +1123,12 @@ textarea {
 
     .nav-link {
         font-size: 4.5rem;
+    }
+
+    .nav-button,
+    .hamburger {
+        height: 75px;
+        width: 75px;
     }
 
     .about-button {
@@ -1230,7 +1258,7 @@ textarea {
 
     input,
     textarea {
-        height: 20px;
+        font-size: 12px;
     }
 
     .header-wrapper {
@@ -1243,6 +1271,31 @@ textarea {
 
     .nav-wrapper {
         margin: 0;
+    }
+
+    .nav-button,
+    .hamburger {
+        height: 40px;
+        width: 40px;
+    }
+
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .about-right {
+        width: 40%;
+        padding: 0;
+        margin-right: -150px;
+    }
+
+    .profile-img {
+        max-height: 235px;
+        width: auto;
+    }
+
+    .nav-wrapper {
+        margin-left: 60px;
     }
 }
 
