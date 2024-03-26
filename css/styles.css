@@ -116,6 +116,54 @@ header {
     align-items: center;
 }
 
+.icon {
+    height: 30px;
+    animation: dance 2s ease infinite;
+    transform-origin: 50% 50%;
+}
+
+/* @keyframes dance {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) } 
+  100% { transform: rotate( 0.0deg) }
+} */
+
+
+@keyframes dance {
+	0% {
+		transform: rotate(0deg)
+	}
+    25% {
+		transform: rotate(45deg)
+	}
+	50% {
+		transform: rotate(90deg)
+	}
+    75% {
+		transform: rotate(135deg)
+    }
+    100% {
+		transform: rotate(180deg)
+    }
+    /* 75% {
+		transform: rotate(-27deg)
+    }
+    50% {
+		transform: rotate(50deg)
+	}
+    25% {
+		transform: rotate(25deg)
+	}
+    0% {
+		transform: rotate(0deg)
+	} */
+}
+
 /* ============================================================================================================
                                                 
                                                 NAV STYLING
@@ -558,6 +606,11 @@ form,
     width: 40px;
 }
 
+.icon {
+    width: auto;
+    height: 40px;
+}
+
 .contact svg:hover,
 .contact svg:focus {
     -webkit-transform: rotate(30deg) scale(1.2);
@@ -854,6 +907,10 @@ textarea {
         width: 55px;
     }
 
+    .icon {
+        width: auto;
+        height: 55px;
+    }
 }
 
 @media (max-width: 992px) and (orientation: portrait) {
@@ -965,6 +1022,11 @@ textarea {
         height: 60px;
         width: 60px;
     }
+
+    .icon {
+        width: auto;
+        height: 60px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -997,7 +1059,7 @@ textarea {
         margin-top: 20px;
     }
 
-    .contact svg {
+    .contact {
         height: 40px;
         width: 60px;
     }
@@ -1099,6 +1161,11 @@ textarea {
         height: 65px;
         width: 65px;
     }
+
+    .icon {
+        width: auto;
+        height: 65px;
+    }
 }
 
 
@@ -1130,6 +1197,11 @@ textarea {
     .hamburger {
         height: 75px;
         width: 75px;
+    }
+
+    .icon {
+        width: auto;
+        height: 75px;
     }
 
     .about-button {
@@ -1278,6 +1350,11 @@ textarea {
     .hamburger {
         height: 40px;
         width: 40px;
+    }
+
+    .icon {
+        width: auto;
+        height: 40px;
     }
 
     .about h1 {
