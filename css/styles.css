@@ -424,6 +424,8 @@ header {
     top: 0;
     bottom: 0;
     margin: auto;
+    overflow: scroll;
+    max-height: 90vh;
 }
 
 .hidden {
