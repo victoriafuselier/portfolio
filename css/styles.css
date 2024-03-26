@@ -397,7 +397,7 @@ header {
 #pop-up-div {
     width: 0;
     height: 0;
-    position: absolute;
+    position: fixed;
     right: 0;
     left: 0;
     top: 0;
@@ -418,7 +418,7 @@ header {
     max-width: 90vw;
     height: fit-content;
     box-shadow: 5px 5px 18px rgba(230, 230, 250, 0.5), -5px -5px 18px rgba(230, 230, 250, 0.5);
-    position: absolute;
+    position: fixed;
     right: 0;
     left: 0;
     top: 0;
