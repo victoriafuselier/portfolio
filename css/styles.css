@@ -21,7 +21,7 @@ html {
     background: linear-gradient(rgba(25, 50, 60, .75), rgba(65, 101, 138, .75)),
         url(../images/stars.jpg);
     background-size: 200%;
-    overflow: hidden;
+    overflow: auto;
     animation: backgroundFlow 400s ease infinite;
     color: white;
     font-family: 'Unica One', sans-serif;
@@ -780,7 +780,7 @@ textarea {
     justify-content: center;
     align-items: center;
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: 900;
     color: var(--dark-purple);
     text-align: center;
     margin: 30px;
