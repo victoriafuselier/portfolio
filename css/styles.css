@@ -17,7 +17,7 @@
     --dark-blue-grey: #13262F;
 }
 
-body {
+html {
     background: linear-gradient(rgba(25, 50, 60, .75), rgba(65, 101, 138, .75)),
         url(../images/stars.jpg);
     background-size: 200%;
