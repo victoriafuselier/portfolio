@@ -14,6 +14,7 @@ educationButton.addEventListener('click', () => {
     
     popUpDiv.innerHTML = `<div id='pop-up-box'>
                             <button class="close">x</button>
+                            <h2>Education</h2>
                             <ul id="education">
                                 <li>Bachelor's Degree, Louisiana State University</li>
                                 <li>FreeCodeCamp</li>
@@ -37,6 +38,7 @@ skillsButton.addEventListener('click', () => {
     
     popUpDiv.innerHTML =    `<div id="pop-up-box">
                                 <button class="close">x</button>
+                                <h2>Skills</h2>
                                 <div id="pop-up-content">
                                     <div id="pop-up-list">
                                         <ul id="skills">

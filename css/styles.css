@@ -19,7 +19,7 @@
 
 html {
     background: linear-gradient(rgba(25, 50, 60, .75), rgba(65, 101, 138, .75)), url(../images/stars.jpg);
-    overflow-y: auto;
+    overflow: auto;
     animation: backgroundFlow 200s ease infinite;
     color: white;
     font-family: 'Unica One', sans-serif;
@@ -354,8 +354,8 @@ header {
 .about-p {
     margin-top: 24px;
     width: 100%;
-    font-family: 'Fira Sans Condensed';
     text-align: left;
+    font-size: 1.1rem;
 }
 
 .about-button-container {
@@ -368,6 +368,7 @@ header {
     color: white;
     border: none;
     font-family: 'Unica One', sans-serif;
+    font-weight: 600;
 }
 
 .about-button-wrapper {
@@ -416,10 +417,16 @@ header {
     z-index: 7;
 }
 
+#pop-up-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 #pop-up-box {
+    font-size: 1.4rem;
     background-color: white;
     font-family: 'fira sans condensed', sans-serif;
-    color: black;
+    color: var(--dark-blue-grey);
     border: 3px solid var(--dark-purple);
     border-radius: 5px;
     padding: 40px 30px;
@@ -477,11 +484,11 @@ header {
     padding-left: 0;
 }
 
-#skills li,
+/* #skills li,
 #pop-up-box p,
 #education li {
     font-size: 12px;
-}
+} */
 
 .sublist {
     list-style-type: disc;
@@ -652,9 +659,9 @@ textarea {
 
 ===============================================================================================================*/
 
-/* #projects-html {
+#projects-html {
     overflow: auto;
-} */
+}
 
 #projects-main {
     height: 100%;
@@ -794,6 +801,18 @@ textarea {
         font-size: 1.5rem;
     }
 
+    .about h1, .projects h1 .contact h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-p {
+        font-size: 1.4rem;
+    }
+
+    .about-button {
+        font-size: 2rem;
+    }
+
     .projects {
         margin: 120px auto 0px;
     }
@@ -895,6 +914,19 @@ textarea {
     .about-button-wrapper:first-of-type {
         margin-bottom: 20px;
     }
+
+    .about h1, .projects h1 .contact h1 {
+        font-size: 2rem;
+    }
+
+    .about-p {
+        font-size: 1rem;
+    }
+
+    .about-button {
+        font-size: 1.5rem;
+    }
+
 
     .home h1 {
         display: flex;
