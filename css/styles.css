@@ -805,6 +805,16 @@ textarea {
         font-size: 1.5rem;
     }
 
+    .projects {
+        margin: 120px auto 0px;
+    }
+
+    #projects-footer {
+        font-size: 1.4rem;
+        margin: 0px auto 60px;
+        width: 300px;
+    }
+
     #portfolio-container {
         width: 300px;
     }
@@ -997,6 +1007,10 @@ textarea {
         width: auto;
         height: 60px;
     }
+
+    #projects-footer {
+        margin-bottom: 80px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -1075,6 +1089,10 @@ textarea {
 		width: 47%;
 		float: left;
 	}
+
+    #projects-footer {
+        width: 500px;
+    }
     
     #pop-up-box {
         width: fit-content;
@@ -1240,6 +1258,14 @@ textarea {
     .profile-img {
         border-radius: 20%;
     }
+
+    .projects {
+        margin-top: 150px;
+    }
+
+    #projects-footer {
+        margin-bottom: 100px;
+    }    
 
     .about-left {
         width: 70%;
