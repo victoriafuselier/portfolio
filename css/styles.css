@@ -1017,6 +1017,10 @@ textarea {
         height: 60px;
     }
 
+    .projects {
+        margin: 150px auto 0px;
+    }
+
     #projects-footer {
         margin-bottom: 80px;
     }
