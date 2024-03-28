@@ -715,15 +715,16 @@ textarea {
 .project-photo a {
     color: var(--dark-purple);
     font-weight: 500;
-    font-size: .9rem;
+    font-size: .8rem;
     cursor: pointer;
     position: absolute;
-    bottom: 7%;
+    bottom: 5px;
     background-color: var(--white);
     border-radius: 5px;
-    padding: 3px 15px;
+    padding: 3px 5px;
     -webkit-transition: all .25s ease-out;
-    text-underline-offset: 2px;
+    border: 1px solid white;
+    text-decoration: none;
 }
 
 .project-photo a:hover,
@@ -733,6 +734,7 @@ textarea {
     -webkit-transform: scale(1.1);
     border: none;
     text-decoration: none;
+    padding: 5px 10px;
 }
 
 .photo-overlay {
@@ -758,10 +760,10 @@ textarea {
 }
 
 .photo-overlay h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 0;
     position: absolute;
-    top: 10%;
+    top: 10px;
 }
 
 .photo-overlay p {
