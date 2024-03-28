@@ -25,6 +25,7 @@ html {
     font-family: 'Unica One', sans-serif;
     min-height: 100%;
     background-size: 200%;
+    scrollbar-width: thin;
 }
 
 body,
@@ -443,6 +444,8 @@ header {
     margin: auto;
     overflow: auto;
     max-height: 90vh;
+    scroll-behavior: contain;
+    scrollbar-width: thin;
 }
 
 .hidden {
