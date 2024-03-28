@@ -18,13 +18,19 @@
 }
 
 html {
-    background: linear-gradient(rgba(25, 50, 60, .75), rgba(65, 101, 138, .75)),
-        url(../images/stars.jpg);
-    background-size: 200%;
-    overflow: auto;
-    animation: backgroundFlow 400s ease infinite;
+    background: linear-gradient(rgba(25, 50, 60, .75), rgba(65, 101, 138, .75)), url(../images/stars.jpg);
+    overflow-y: auto;
+    animation: backgroundFlow 200s ease infinite;
     color: white;
     font-family: 'Unica One', sans-serif;
+    min-height: 100%;
+    background-size: 200%;
+}
+
+body,
+main,
+.page-content {
+    height: auto;
 }
 
 @keyframes backgroundFlow {
@@ -285,16 +291,6 @@ header {
 
 ===============================================================================================================*/
 
-#about-html,
-#about-body {
-    overflow: auto;
-    height: 100%;
-}
-
-#about-main {
-    height: 100%;
-}
-
 .about {
     margin: 100px auto 0;
     display: flex;
@@ -438,19 +434,8 @@ header {
     top: 0;
     bottom: 0;
     margin: auto;
-    overflow: scroll;
+    overflow: auto;
     max-height: 90vh;
-}
-
-    /* Hide scrollbar for Chrome, Safari and Opera */
-#pop-up-box::-webkit-scrollbar {
-    display: none;
-}
-
-    /* Hide scrollbar for IE, Edge and Firefox */
-#pop-up-box {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
 }
 
 .hidden {
@@ -528,10 +513,10 @@ header {
 
 ===============================================================================================================*/
 
-#contact-html,
+/* #contact-html,
 #contact-body {
     overflow: auto;
-}
+} */
 
 #contact-html,
 #contact-body,
@@ -667,9 +652,9 @@ textarea {
 
 ===============================================================================================================*/
 
-#projects-html {
+/* #projects-html {
     overflow: auto;
-}
+} */
 
 #projects-main {
     height: 100%;
@@ -707,7 +692,7 @@ textarea {
 
 .project-photo {
 	position: relative;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .project-container:focus .photo-overlay,
@@ -758,7 +743,7 @@ textarea {
     opacity: 0;
     -webkit-transition-property: opacity;
     -webkit-transition-duration: .5s;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: 'Fira Sans Condensed', sans-serif;
     text-transform: uppercase;
 }
